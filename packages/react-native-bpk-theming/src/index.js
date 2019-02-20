@@ -18,8 +18,10 @@
 
 /* @flow */
 
-import commonTests from './BpkSectionListItem-test.common';
+import { ThemeProvider as BpkThemeProvider, ThemeContext } from 'theming';
 
-describe('iOS', () => {
-  commonTests();
-});
+import createWithTheme from './create-with-theme';
+
+const withTheme = createWithTheme(ThemeContext);
+
+export { withTheme, BpkThemeProvider };
