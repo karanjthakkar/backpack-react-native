@@ -18,17 +18,10 @@
 
 /* @flow */
 
-// This is based on https://github.com/cssinjs/theming/blob/a2e1f4bdb1dc9c8ac705ee9987c86125c34ed485/src/index.js
-// But with our custom `createWithTheme` function.
-
-import { createContext } from 'react';
-import { createTheming } from 'theming';
+import { ThemeProvider as BpkThemeProvider, ThemeContext } from 'theming';
 
 import createWithTheme from './create-with-theme';
 
-const ThemeContext = createContext();
-
-const { ThemeProvider: BpkThemeProvider } = createTheming(ThemeContext);
 const withTheme = createWithTheme(ThemeContext);
 
-export { BpkThemeProvider, withTheme };
+export { withTheme, BpkThemeProvider };
