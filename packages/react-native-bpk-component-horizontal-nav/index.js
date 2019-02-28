@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import BpkHorizontalNav from './src/BpkHorizontalNav';
 import BpkHorizontalNavItem from './src/BpkHorizontalNavItem';
 

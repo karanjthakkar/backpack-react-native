@@ -246,4 +246,5 @@ class BpkNavigationBar extends Component<Props, {}> {
   }
 }
 
-export default withTheme(BpkNavigationBar);
+// $FlowFixMe
+export default (withTheme(BpkNavigationBar): typeof BpkNavigationBar);
