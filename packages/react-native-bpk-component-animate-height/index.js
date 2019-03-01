@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import BpkAnimateHeight from './src/BpkAnimateHeight';
 
 export default BpkAnimateHeight;

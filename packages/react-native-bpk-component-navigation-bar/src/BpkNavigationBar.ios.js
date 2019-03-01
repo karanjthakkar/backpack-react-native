@@ -251,4 +251,5 @@ class BpkNavigationBar extends Component<Props, {}> {
   }
 }
 
-export default withTheme(BpkNavigationBar);
+// $FlowFixMe, because HOCs
+export default (withTheme(BpkNavigationBar): typeof BpkNavigationBar);

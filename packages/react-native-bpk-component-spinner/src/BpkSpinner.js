@@ -85,13 +85,11 @@ const BpkSpinner = props => {
   );
 };
 
-const propTypes = {
+BpkSpinner.propTypes = {
   small: PropTypes.bool,
   theme: makeThemePropType(REQUIRED_THEME_ATTRIBUTES),
   type: PropTypes.oneOf(Object.keys(SPINNER_TYPES)),
 };
-
-BpkSpinner.propTypes = propTypes;
 
 BpkSpinner.defaultProps = {
   small: false,
@@ -99,5 +97,6 @@ BpkSpinner.defaultProps = {
   type: 'primary',
 };
 
-export default withTheme(BpkSpinner);
-export { propTypes, SPINNER_TYPES };
+export { SPINNER_TYPES };
+// $FlowFixMe, because HOCs
+export default (withTheme(BpkSpinner): typeof BpkSpinner);
