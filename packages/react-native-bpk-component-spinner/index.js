@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+/* @flow */
+
 import BpkSpinner, { SPINNER_TYPES } from './src/BpkSpinner';
 
 export { SPINNER_TYPES };

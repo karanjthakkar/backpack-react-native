@@ -20,4 +20,5 @@
 
 import BpkAnimateHeight from './src/BpkAnimateHeight';
 
+export type { Props as BpkAnimateHeightProps } from './src/BpkAnimateHeight';
 export default BpkAnimateHeight;
